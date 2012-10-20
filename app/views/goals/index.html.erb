@@ -1,0 +1,71 @@
+
+
+<table>
+<tr>
+<td colspan='6'>
+<div class='menu-light'>
+<%= link_to 'Home', root_path %> | <%=link_to 'Add Goal', new_goal_path %> | <%=link_to 'Manage Targets', targets_path%>
+</div>
+</td>
+</tr>
+ <tr>
+ <td>
+ <div id=summary>
+ 
+ 
+ <table border="1">
+ <tr>
+    <th>Goal title</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th colspan="3">Actions</th>
+    
+  </tr>
+<% @goals.each do |goal| %>
+  <tr>
+    <td><%= goal.title %></td>
+    <td><%= goal.start_date %></td>
+    <td><%= goal.end_date %></td>
+    <td><%= link_to 'Show', goal %></td>
+    <td><%= link_to 'Edit', edit_goal_path(goal) %></td>
+    <td><%= link_to 'Destroy', goal, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </div>
+ </td>
+ </tr>
+
+
+
+
+</table>
+
+
+
+

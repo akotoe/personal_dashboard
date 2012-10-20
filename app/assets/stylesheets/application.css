@@ -1,0 +1,305 @@
+
+/*General
+--------------------------------------------------------------*/
+
+ body{
+	
+ }
+
+
+/*Blocks
+--------------------------------------------------------------*/
+
+ div#header{
+ 	border: solid 1px;
+ 	border-color: #cccccc; 
+	margin:5px;
+	height: 90px;
+	background-color: #F7F7F7;
+
+ }
+
+div#header .button{
+    background-color: #F7F7F7;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+    width: 200px;
+    height: 70px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+   
+	font-weight:bold;
+    font-size:60px;
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+    
+   
+
+	
+}
+div#header a:link{
+	text-decoration:none;
+
+}
+
+ div#content{
+ 	border: solid 1px;
+ 	border-color: #cccccc; 
+	margin:5px;
+	height: 490px;
+	background-color: #F7F7F7;	
+	
+ }
+ div#summary{
+ 	border: solid 1px;
+    padding:10px;
+	margin:5px;
+	height: 490px;
+	border-color: #cccccc; 
+	background-color: #F7F7F7;
+	
+	
+ }
+ div#footer{
+ 	border: solid 1px;
+ 	border-color: #cccccc; 
+	margin:5px;
+	height: 40px;
+	background-color: #F7F7F7;
+
+ }
+ 
+ 
+
+/*Sections
+--------------------------------------------------------------*/
+
+.menu-bar{
+ 	border: solid 1px;
+ 	border-color: #cccccc; 
+	margin:5px;
+	height: 20px;
+	background-color: #F7F7F7;
+
+ }
+ 
+ .menu-light{
+ 	border: solid 1px;
+    padding:10px;
+	margin:5px;
+	height: 20px;
+	border-color: #cccccc; 
+	background-color: #F7F7F7;
+	
+	
+ }
+ .top-section{
+ 	height: 100px;
+
+ }
+ .middle-section{
+ 	height: 500px;
+ }
+ .middle-right-section{
+ 	width: 20%;
+ 	
+ }
+ .middle-left-section{
+ 	width: 80%;
+ }
+ 
+ .bottom-section{
+ 	height: 50px;
+ }
+
+ 
+
+ /*Table
+ -----------------------------------------------------------------*/
+ table{
+ 	width: 80%;
+ 	border:solid 1px;
+ 	border-color: #cccccc; 
+ 	margin-left:auto;
+ 	margin-right:auto;
+ 	
+ }
+
+ td{
+	vertical-align: top;
+
+ }
+
+ th{
+ 	font-size: 10px;
+ }
+
+
+/* Grid
+-----------------------------------------------------------------*/
+.grid{
+	
+}
+
+
+.grid-body {
+	margin:0 5px 5px 5px;
+	height: 460px;
+	border-bottom: solid 1px #cccccc;
+	overflow: scroll; 
+}
+
+.grid-body table {
+		width: 100%;
+		border: solid 1px #cccccc;
+		border-collapse: collapse;
+	   	border-spacing: 0;
+		margin-left:auto;
+ 		margin-right:auto;
+}
+
+.grid-body table tr{
+		
+		
+}
+
+.grid-body table tr td{
+		
+		border: dotted 1px #cccccc;
+}
+
+
+.grid-head {
+	margin:5px 5px 0 5px;
+
+}
+
+.grid-head table{
+	width: 100%;
+		border: solid 1px #cccccc;
+		border-collapse: collapse;
+	   	border-spacing: 0;
+		margin-left:auto;
+ 		margin-right:auto;
+
+}
+
+.grid-head table th{
+	width: 21px;
+	border: solid 1px #cccccc;
+		
+
+}
+
+.grid-head table td{
+	width: 21px;
+	border: dotted 1px #cccccc;
+		
+
+}
+
+.grid-head table tr {
+	
+	height: 30px;
+	border-bottom: solid 1px #cccccc;
+	background-color: #F7F7F7;
+}
+
+.grid-cell-mid {
+	
+	background-color: #F7F7F7;
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+}
+
+.grid-cell-standard {
+	
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+}
+
+.grid-cell-goal-block {
+	
+	background-color: #FFAF0A;
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+    opacity:0.6
+}
+
+.grid-cell-goal-block-special {
+	
+	background-color: #FFAF0A;
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+    opacity:0.9
+}
+
+
+.grid-body #test {
+	font-size: 10px;
+	
+}
+
+.block{
+	border: 1px;
+	margin:0;
+	/*background-color: green;*/
+    
+}
+
+
+.block td{
+	height: 21px;
+	
+}
+
+/*Special cell inner content
+------------------------------------------------------ */
+
+
+#box {  
+            width: 300px;  
+            height: 300px;  
+            background-color: #F7F7F7;
+            border: solid 1px #cccccc;  
+            font-size: 11px;  
+            font-family: verdana;  
+            color: #000;  
+            padding: 2px;  
+}  
+
+#box .target {  
+             
+            background-color: #F7F7F7;
+                        
+            
+} 
+
+#summary .manage {  
+             
+            
+            width: 120px;
+            text-align: center;  
+            height: 20px;
+            margin-right: auto;  
+            margin-left: auto;  
+            background-color: #F7F7F7;
+            border: solid 1px #cccccc;  
+            font-size: 11px;  
+            font-family: verdana;  
+            color: #000;  
+            padding: 2px; 
+                        
+            
+}  
+
+

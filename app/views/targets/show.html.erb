@@ -1,0 +1,32 @@
+<table>
+<tr>
+<td>
+<div class='menu-light'>
+<%= link_to 'Home', root_path %> |
+<%= link_to 'Edit', edit_target_path(@target) %> |
+<%= link_to 'Back', targets_path %>
+</div>
+
+<div id='summary'>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Target:</b>
+  <%= @target.name %>
+</p>
+
+<p>
+  <b>Deadline:</b>
+  <%= @target.deadline%>
+</p>
+
+<p>
+  <b>Achieved?:</b>
+  <%= @target.state %>
+</p>
+
+
+</td>
+</div>
+</tr>
+</table>

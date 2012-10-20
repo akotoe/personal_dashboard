@@ -1,0 +1,45 @@
+<table>
+<tr>
+<td>
+<div class='menu-light'>
+<%= link_to 'Home', root_path %> |
+<%= link_to 'Edit', edit_goal_path(@goal) %> |
+<%= link_to 'Back', goals_path %>
+</div>
+
+<div id='summary'>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @goal.title %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @goal.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @goal.end_date %>
+</p>
+
+<p>
+  <b>Targets:</b>
+  <%if @goal.targets%>
+  
+  <ul>
+  <% @goal.targets.each do |target| %>
+  
+   <li>"<%= target.name%>" achieved? <%= target.state%> </li>
+   
+   <% end %>
+  </ul> 
+  <%end%> 
+
+</p>
+</td>
+</div>
+</tr>
+</table>

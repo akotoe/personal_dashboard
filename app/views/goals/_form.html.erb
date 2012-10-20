@@ -1,0 +1,43 @@
+
+<div id='summary'>
+
+<%= form_for @goal, :remote=>true do |f| %>
+  
+
+  <div class="field">
+    Goal Title: <br />
+    <%= f.text_field :title %>
+  
+   
+  
+    <%= f.label :start %>    <%= f.datetime_select :start_date %>
+  
+ 
+    <%= f.label :end %>    <%= f.datetime_select :end_date %>
+  </div>
+ 
+ </br>
+ Add targets:
+<%=f.fields_for :targets do |t|%>
+   
+   <div class="task"> 
+      <p>
+      <%=t.label :name%>
+      <%=t.text_field :name%>
+       <%=t.label :deadline%>
+      <%=t.datetime_select :deadline%>
+      <%=t.label :achieved?%>
+        <%=t.check_box :state%> | 
+        <%= link_to_function " Remove", "$(this).closest('.task').remove()" %>     
+    </p>
+    </div>
+  <%end%>
+ 
+  <%=f.submit%>
+
+ </div>
+
+
+<% end %>
+
+</div>

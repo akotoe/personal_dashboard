@@ -1,0 +1,87 @@
+
+
+<div id="box_text" hidden>down</div>
+
+
+
+
+<table>
+<tr class='top-section'>
+    <td colspan='2'>
+        <div id='header'>
+            
+            <div class='button'>
+                
+               <% if @summary %>
+               <%=@summary.current%>
+               <% end %>
+               
+            </div>
+            
+        </div>
+    </td>
+</tr>
+<tr class='mid-section'>
+    <td class='middle-right-section'>
+        <div id='summary'>
+            <div class="manage">
+            
+            <%=link_to 'Manage goals', goals_path%>
+            
+            </div>
+        </div>
+    </td>
+    <td class='middle-left-section'>
+        <div class='grid-head'>
+            <table>
+                <tr>
+                    <% for i in 0...12%>
+                        <th>
+                            <%=((Time.now)-(3600*(12-i))).hour%>
+                        </th>
+                    <% end%>
+                    <% 1.times do%>
+                        <th class='grid-cell-mid'>
+                            <%=Time.now.hour%>
+                        </th>
+                    <% end%>
+                    <% for i in 1...12%>
+                        <th>
+                            <%=((Time.now)+(3600*i)).hour%>
+                        </th>
+                    <% end%>
+                </tr>
+            </table>               
+        </div>
+        <div class='grid-body'> 
+            
+            
+        <% if @goals %>
+            <table class='grid'>
+                <thead>
+                    <tr></tr>
+                </thead>
+                <tbody>
+                    <!--Dynamic grid goes here -->
+                </tbody>
+                <tfooter>
+                </tfooter>
+            </table>
+        <% end %>
+        
+        
+        
+        </div>
+    </td>
+    
+</tr>
+<tr class='bottom-section'>
+    <td colspan='2'>
+        <div id='footer'> 
+        </div>
+    </td>
+</tr>
+</table>
+
+
+

@@ -1,0 +1,24 @@
+
+<div id='summary'>
+
+<%= form_for @target do |f| %>
+  
+
+  <div class="field">
+    <p>Target  <%= f.text_field :name %></br></p>
+
+    <p>Goal <%=collection_select(:target, :goal_id, Goal.all, :id, :title, :prompt => false) %></p>
+   
+       <%= f.label :deadline %>    <%= f.datetime_select :deadline %> </br></br>
+    <%= f.label :achieved %>    <%= f.check_box :state %>
+  </div>
+ 
+ </br></br>
+  <%=f.submit%>
+
+ </div>
+
+
+<% end %>
+
+</div>
